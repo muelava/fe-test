@@ -21,7 +21,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
                 onChange={(e) => setQuery(e.target.value)}
                 className="border rounded-lg p-2 w-full"
             />
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+            <button type="submit" className="bg-gradient-to-r from-blue-500 to-blue-400 text-white px-4 py-2 rounded-lg cursor-pointer ">
                 Search
             </button>
         </form>
