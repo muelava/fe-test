@@ -7,7 +7,7 @@ interface UserListProps {
 
 export default function UserList({ users, onSelectUser }: UserListProps) {
     return (
-        <div className="p-4">
+        <div>
             {users.length === 0 && (
                 <>
                     <div className="max-w-md mx-auto flex items-center flex-col">
@@ -19,7 +19,7 @@ export default function UserList({ users, onSelectUser }: UserListProps) {
             {users.map((user) => (
                 <div
                     key={user.login}
-                    className="flex items-center gap-4 p-2 border rounded-lg cursor-pointer hover:bg-gray-100"
+                    className="flex items-center gap-4 p-2 mb-3 border rounded-lg cursor-pointer hover:bg-gray-100"
                     onClick={() => onSelectUser(user.login)}
                 >
                     <img src={user.avatar_url} alt={user.login} className="w-12 h-12 rounded-full" />

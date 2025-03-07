@@ -12,7 +12,7 @@
 
 ## 📸 Demo
 
-🔗 **[Live Demo](#)** _(Add the hosted application URL)_
+🔗 **[Live Demo](https://muelava.github.io/fe-test/)** _(Add the hosted application URL)_
 
 ## 🛠️ Technologies Used
 
