@@ -1,6 +1,4 @@
-# Membuat file README_EN.md dalam bahasa Inggris
-
-readme_content_en = """# GitHub Repositories Explorer
+# GitHub Repositories Explorer
 
 🚀 **GitHub Repositories Explorer** is a **React** and **TypeScript**-based application that allows users to search for up to 5 GitHub users based on the entered username. Once a user is selected, the application displays the repositories owned by that user.
 
