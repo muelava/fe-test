@@ -2,6 +2,16 @@
 
 🚀 **GitHub Repositories Explorer** is a **React** and **TypeScript**-based application that allows users to search for up to 5 GitHub users based on the entered username. Once a user is selected, the application displays the repositories owned by that user.
 
+## 📸 Screenshots
+
+### 🔍 Search Users & 📂 Repository List
+
+![Search Users](./screenshots/mobile-view.png)
+
+### ❌ Error Handling / failed fetching
+
+![Repository List](./screenshots/error-handling.png)
+
 ## 🌟 Key Features
 
 - 🔎 **GitHub User Search**: Search for up to 5 users with similar usernames.
