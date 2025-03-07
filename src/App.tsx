@@ -5,6 +5,8 @@ import { Skeleton } from "./components/Skeleton";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./components/ui/accordion";
 import { ExternalLink, Loader, Star, UserRoundSearch } from "lucide-react";
 import { Repo } from "./lib/types/App";
+import { LinearGradient } from "react-text-gradients";
+import toast from "react-hot-toast";
 
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
       const data = await searchUsers(query);
       setUsers(data.items || []);
     } catch (error) {
+      toast.error("Failed to fetch users")
       console.error(error);
     }
     setLoading(false);
@@ -48,7 +51,11 @@ export default function App() {
         </div>
       )}
       <div className="container max-w-xl mx-auto p-4">
-        <h1 className="text-2xl font-bold text-center mb-5">GitHub Explorer</h1>
+        <h1 className="text-2xl font-bold text-center mb-10">
+          <LinearGradient gradient={['to left', 'oklch(0.623 0.214 259.815) ,oklch(0.282 0.091 267.935)']}>
+            GitHub Explorer
+          </LinearGradient>
+        </h1>
         <SearchBar onSearch={handleSearch} />
         {query && <p className="text-sm my-3">Showing users for "<b>{query}</b>" </p>}
 
@@ -62,7 +69,11 @@ export default function App() {
                   onClick={() => fetchRepos(user.login)}
                 >
                   <img src={user.avatar_url} alt={user.login} className="w-10 h-10 rounded-full" />
-                  <span className="font-bold me-auto text-base">{user.login}</span>
+                  <span className="font-bold me-auto text-base">
+                    <LinearGradient gradient={['to left', 'oklch(0.623 0.214 259.815) ,oklch(0.282 0.091 267.935)']}>
+                      {user.login}
+                    </LinearGradient>
+                  </span>
                 </AccordionTrigger>
                 <AccordionContent>
                   {loading && !repos[user.login] ? (

@@ -25,10 +25,10 @@
 
 1. **Clone this repository**:
 
-   ````sh
-   git clone https://github.com/muelava/fe-test.git```
+   ```sh
+   git clone https://github.com/muelava/fe-test.git
 
-   ````
+   ```
 
 2. **Navigate to the project directory**:
 
