@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchBar from "./components/SearchBox";
 import UserList from "./components/UserList";
 import { searchUsers, getUserRepos } from "./api/github";
+import { Skeleton } from "./components/Skeleton";
 
 export default function App() {
   const [users, setUsers] = useState<{ login: string; avatar_url: string }[]>([]);
@@ -36,7 +37,8 @@ export default function App() {
     <div className="container max-w-xl mx-auto p-4">
       <h1 className="text-2xl font-bold text-center">GitHub Explorer</h1>
       <SearchBar onSearch={handleSearch} />
-      {loading && <p className="text-center">Loading...</p>}
+      <Skeleton />
+      {loading && <Skeleton />}
       <UserList users={users} onSelectUser={handleSelectUser} />
       {selectedUser && (
         <div className="p-4">

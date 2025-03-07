@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# Membuat file README_EN.md dalam bahasa Inggris
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+readme_content_en = """# GitHub Repositories Explorer
 
-Currently, two official plugins are available:
+🚀 **GitHub Repositories Explorer** is a **React** and **TypeScript**-based application that allows users to search for up to 5 GitHub users based on the entered username. Once a user is selected, the application displays the repositories owned by that user.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Key Features
 
-## Expanding the ESLint configuration
+- 🔎 **GitHub User Search**: Search for up to 5 users with similar usernames.
+- 📂 **Repository List**: Display all repositories owned by the selected user.
+- ⚡ **Responsive Design**: Supports multiple device screens.
+- 🎨 **User-Friendly UI**: Simple and intuitive interface with loading states.
+- 🔥 **Error Handling**: Proper error handling for a better user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Demo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🔗 **[Live Demo](#)** _(Add the hosted application URL)_
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Technologies Used
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [React](https://reactjs.org/) - Library for building UI.
+- [TypeScript](https://www.typescriptlang.org/) - Statically typed JavaScript superset.
+- [GitHub API](https://developer.github.com/v3/) - Official GitHub API for fetching user and repository data.
+- (Add additional libraries used, such as styling or state management)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🚀 Installation and Running the Project
+
+1. **Clone this repository**:
+
+   ````sh
+   git clone https://github.com/muelava/fe-test.git```
+
+   ````
+
+2. **Navigate to the project directory**:
+
+   ````sh
+   cd fe-test```
+
+   ````
+
+3. **Install dependencies**:
+
+   ````sh
+   npm install```
+
+   ````
+
+4. **Start the application in development mode**:
+
+   ````sh
+   npm start```
+
+   ````
+
+5. **Open in browser: Access the application at http://localhost:5173**:
+   ````sh
+   npm start```
+   ````
