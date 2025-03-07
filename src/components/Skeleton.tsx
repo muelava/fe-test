@@ -1,13 +1,17 @@
-export const Skeleton = () => {
+import { FC } from "react"
+
+interface SkeletonProps {
+    count?: number
+}
+export const Skeleton: FC<SkeletonProps> = ({ count = 1 }) => {
     return (
         <>
-            {Array.from({ length: 5 }).map((_, index) => (
-                <div key={index} className="mx-auto w-full rounded-md p-4 border">
-                    <div className="flex animate-pulse space-x-4 items-center">
-                        <div className="size-10 rounded-full bg-gray-200"></div>
-                        <div className="flex-1 py-1 flex justify-between">
-                            <div className="h-5 w-1/2 rounded bg-gray-200"></div>
-                            <div className="size-5 rounded-full bg-gray-200"></div>
+            {Array.from({ length: count }).map((_, index) => (
+                <div key={index} className="mx-auto w-full rounded-md py-2">
+                    <div className="flex animate-pulse space-x-4 items-center pl-3">
+                        <div className="flex-1 py-1">
+                            <div className="w-1/2 rounded bg-gray-200 mb-2 h-4"></div>
+                            <div className="w-full rounded bg-gray-200 mb-2 h-4"></div>
                         </div>
                     </div>
                 </div>

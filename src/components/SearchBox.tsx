@@ -13,13 +13,13 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex gap-2 p-4">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-4 gap-2">
             <input
                 type="text"
                 placeholder="Enter username"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="border border-neutral-400 rounded-lg p-2 w-full focus:outline-blue-500 transition-all duration-200"
+                className="border border-neutral-400 rounded-lg p-2 w-full focus:outline-blue-500 transition-all duration-200 md:col-span-3"
             />
             <button type="submit" className="bg-gradient-to-r from-blue-500 to-blue-400 text-white px-4 py-2 rounded-lg cursor-pointer">
                 Search
