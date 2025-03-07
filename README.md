@@ -32,26 +32,26 @@
 
 2. **Navigate to the project directory**:
 
-   ````sh
-   cd fe-test```
+   ```sh
+   cd fe-test
 
-   ````
+   ```
 
 3. **Install dependencies**:
 
-   ````sh
-   npm install```
+   ```sh
+   npm install
 
-   ````
+   ```
 
 4. **Start the application in development mode**:
 
-   ````sh
-   npm start```
+   ```sh
+   npm start
 
-   ````
+   ```
 
 5. **Open in browser: Access the application at http://localhost:5173**:
-   ````sh
-   npm start```
-   ````
+   ```sh
+   npm start
+   ```
