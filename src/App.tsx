@@ -33,7 +33,7 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container max-w-xl mx-auto p-4">
       <h1 className="text-2xl font-bold text-center">GitHub Explorer</h1>
       <SearchBar onSearch={handleSearch} />
       {loading && <p className="text-center">Loading...</p>}

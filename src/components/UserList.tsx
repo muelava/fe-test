@@ -1,3 +1,5 @@
+import { UserRoundSearch } from "lucide-react";
+
 interface UserListProps {
     users: { login: string; avatar_url: string }[];
     onSelectUser: (username: string) => void;
@@ -6,7 +8,14 @@ interface UserListProps {
 export default function UserList({ users, onSelectUser }: UserListProps) {
     return (
         <div className="p-4">
-            {users.length === 0 && <p>No users found.</p>}
+            {users.length === 0 && (
+                <>
+                    <div className="max-w-md mx-auto flex items-center flex-col">
+                        <UserRoundSearch size={90} className="text-blue-300" />
+                        <p className="text-neutral-700">No users found.</p>
+                    </div>
+                </>
+            )}
             {users.map((user) => (
                 <div
                     key={user.login}
