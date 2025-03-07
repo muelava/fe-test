@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist --repo https://github.com/muelava/fe-test.git"
   },
   "dependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.2.5",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.0.10",
