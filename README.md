@@ -10,7 +10,7 @@
 
 ### ❌ Error Handling / failed fetching
 
-![Repository List](./screenshots/error-handling.png)
+![Repository List](./screenshots/error-handle.png)
 
 ## 🌟 Key Features
 
