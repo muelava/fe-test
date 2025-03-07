@@ -54,9 +54,11 @@
 
    ```
 
-4. **Start the application in development mode & Open in browser: Access the application at http://localhost:5173**:
+4. **Start the application in development mode**:
 
    ```sh
    npm run dev
 
    ```
+
+5. **Open in browser: Access the application at http://localhost:5173**
